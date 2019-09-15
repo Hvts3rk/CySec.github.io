@@ -167,6 +167,7 @@ section {
     align-items: center;
 }
 
+
 .main-slider .slider-bg-position {
     background-size: cover !important;
     background-position: center center !important;
@@ -185,10 +186,12 @@ section {
 
 .main-slider h2 {
     color: #fff;
-    font-size: 54px;
+    font-size: 230%;
+    background-color: rgba(0, 0, 0, 0.3);
     line-height: 59px;
     padding: 0 19%;
     text-transform: uppercase;
+    border-radius: 20px;
 }
 
 .main-slider .swiper-pagination-bullet {
