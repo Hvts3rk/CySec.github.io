@@ -1,61 +1,46 @@
-<!-- https://bootsnipp.com/snippets/NjR9z under MIT License -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CySec - Elite Security for Business and Private</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="referrer" content="same-origin">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-    <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>CySec - Elite Security for Business and Private</title>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         body {
-            font-family: "Gill Sans";
+            font-family: Gill Sans, sans-serif;
             font-weight: lighter
         }
+
+        .carousel-control-prev-icon {
+            height: 10%;
+            width: 10%;
+            background-image: "open-iconic-master/svg/arrow-back.svg";
+        }
+
+        .carousel-control-next-icon {
+            height: 10%;
+            width: 10%;
+            background-image: "open-iconic-master/svg/arrow-forward.svg";
+        }
     </style>
-    <script>
-        $("#carousel").carousel();
-    </script>
-    <link rel="stylesheet" href="res/css/stylefoglio.css">
+
+    <link rel="stylesheet" href="res/css/general_stylesheet.css">
+    <link rel="stylesheet" href="res/css/services_style.css">
 </head>
 <body>
-<!-- Navigation
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top mb-5 shadow">
-    <div class="container">
-        <a class="navbar-brand" href="#"><font size="6">CySec</font></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav> -->
-<nav class="navbar navbar-expand-lg mb-4 top-bar navbar-static-top sps sps--abv bg-dark">
+<nav class="navbar navbar-expand-lg mb-4 top-bar navbar-static-top  sps--abv navbar-dark">
     <div class="container">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                 data-target="#navbarCollapse1" aria-controls="navbarCollapse" aria-expanded="false"
@@ -65,104 +50,87 @@
         <a class="navbar-brand mx-auto">Cy<span>Sec</span></a>
         <div class="collapse navbar-collapse" id="navbarCollapse1">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a class="nav-link" href="index.html">Home <span
+                <li class="nav-item "><a class="nav-link" href="index.html">Home <span
                         class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item active"><a class="nav-link" href="services.html">Services</a></li>
+                <li class="nav-item "><a class="nav-link" href="about.html">About</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
-
-<div class="swiper-container main-slider" id="myCarousel">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide slider-bg-position" style="background:url('res/img/certified-scan.jpg')"
-             data-hash="slide1">
-            <h2>Compliance based assessments</h2>
-        </div>
-        <div class="swiper-slide slider-bg-position" style="background:url('res/img/budget-saving.jpg')"
-             data-hash="slide2">
-            <h2>Budget saving solutions</h2>
-        </div>
-    </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-    <!-- Add Navigation -->
-    <div class="swiper-button-prev"><i class="fa fa-chevron-left"></i></div>
-    <div class="swiper-button-next"><i class="fa fa-chevron-right"></i></div>
-</div>
-
-<section class="service-sec" id="benefits">
+<section class="services pt-100 pb-50" id="services">
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="heading">
-                    <h2><small>Benefits of Exercise</small>To enjoy the glow of good health, you must exercise</h2>
+            <div class="col-xl-6 mx-auto text-center">
+                <div class="section-title mb-100">
+                    <h4>Information Security Services</h4>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="row">
-                    <div class="col-md-6 text-sm-center service-block"><i class="fa fa-plus" aria-hidden="true"></i>
-                        <h3>Better Sleep</h3>
-                        <p>Never in all their history have men been able truly to conceive of the world as one: a single
-                            sphere, a globe, having the qualities of a globe.</p>
-                    </div>
-                    <div class="col-md-6 text-sm-center service-block"><i class="fa fa-leaf" aria-hidden="true"></i>
-                        <h3>Reduces Weight</h3>
-                        <p>Never in all their history have men been able truly to conceive of the world as one: a single
-                            sphere, a globe, having the qualities of a globe.</p>
-                    </div>
-                    <div class="col-md-6 text-sm-center service-block"><i class="fa fa-leaf" aria-hidden="true"></i>
-                        <h3>Improves Mood</h3>
-                        <p>Never in all their history have men been able truly to conceive of the world as one: a single
-                            sphere, a globe, having the qualities of a globe.</p>
-                    </div>
-                    <div class="col-md-6 text-sm-center service-block"><i class="fa fa-bell" aria-hidden="true"></i>
-                        <h3>Boosts Energy</h3>
-                        <p>Never in all their history have men been able truly to conceive of the world as one: a single
-                            sphere, a globe, having the qualities of a globe.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4"><img src="http://grafreez.com/wp-content/temp_demos/burnout/img/side-01.jpg"
-                                       class="img-fluid"/></div>
         </div>
-        <!-- /.row -->
-    </div>
-</section>
-
-<!-- About
-    ================================================== -->
-<section class="about-sec parallax-section" id="about">
-    <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <h2><small>Who We Are</small>About<br>
-                    Our Blog</h2>
+            <div class="col-lg-4 col-md-6">
+                <!-- Single Service ################# SOSTITUISCI LE ICONE-->
+                <div class="single-service">
+                    <i class="fa fa-laptop"></i>
+                    <h4>Web-Application Security Assessment <br> (WASA)</h4>
+                    <p>[TO DO]</p>
+                </div>
             </div>
-            <div class="col-md-4">
-                <p>To enjoy good health, to bring true happiness to one's family, to bring peace to all, one must first
-                    discipline and control one's own mind. If a man can control his mind he can find the way to
-                    Enlightenment, and all wisdom and virtue will naturally come to him.</p>
-                <p>Saving our planet, lifting people out of poverty, advancing economic growth... these are one and the
-                    same fight. We must connect the dots between climate change, water scarcity, energy shortages,
-                    global health, food security and women's empowerment. Solutions to one problem must be solutions for
-                    all.</p>
+            <div class="col-lg-4 col-md-6">
+                <!-- Single Service -->
+                <div class="single-service">
+                    <i class="fa fa-gears"></i>
+                    <h4>Web-Server Penetration Testing <br> (VAPT)</h4>
+                    <p>[TO DO]</p>
+                </div>
             </div>
-            <div class="col-md-4">
-                <p>Our greatest happiness does not depend on the condition of life in which chance has placed us, but is
-                    always the result of a good conscience, good health, occupation, and freedom in all just
-                    pursuits.</p>
-                <p>Being in control of your life and having realistic expectations about your day-to-day challenges are
-                    the keys to stress management, which is perhaps the most important ingredient to living a happy,
-                    healthy and rewarding life.</p>
-                <p><a href="#" class="btn btn-transparent-white btn-capsul">Explore More</a></p>
+            <div class="col-lg-4 col-md-6">
+                <!-- Single Service -->
+                <div class="single-service">
+                    <i class="fa fa-list-alt" aria-hidden="true"></i>
+                    <h4>Compliance-based Assessments <br> (OWASP)</h4>
+                    <p>[TO DO]</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <!-- Single Service -->
+                <div class="single-service">
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                    <h4>Infrastructure Security Overview</h4>
+                    <p>[TO DO]</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <!-- Single Service -->
+                <div class="single-service">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <h4>Internal Security Audit <br> (Social Engineering)</h4>
+                    <p>[TO DO]</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <!-- Single Service -->
+                <div class="single-service">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                    <h4>Information Security Training Course</h4>
+                    <p>[TO DO]</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </body>
-
 </html>
