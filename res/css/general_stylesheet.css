@@ -87,7 +87,6 @@ section {
 }
 
 .sps--abv {
-    /*background-color: transparent;*/
     color: white;
 }
 
@@ -140,11 +139,57 @@ section {
 }
 
 
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
 
-
-.carousel-caption{
-    padding-bottom: 35%;
+@media (max-width: 420px) {
+    .carousel-caption p {
+        margin-bottom: 12vw;
+        font-size: 6vw;
+        line-height: 1.4;
+    }
 }
+
+@media (min-width: 500px) {
+    .carousel-caption p {
+        margin-bottom: 18vw;
+        font-size: 5vw;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 750px) {
+    .carousel-caption p {
+        margin-bottom: 20vw;
+        font-size: 5vw;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-caption p {
+        margin-bottom: 25vw;
+        font-size: 4vw;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 1400px) {
+    .carousel-caption p {
+        margin-bottom: 26vw;
+        font-size: 4vw;
+        line-height: 1.4;
+    }
+}
+
+@media (min-width: 2500px) {
+    .carousel-caption p {
+        margin-bottom: 38vw;
+        font-size: 3vw;
+        line-height: 1.4;
+    }
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -278,9 +323,10 @@ section {
 }
 
 .about-sec h2 {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 800;
-    margin-top: 40%;
+    margin-top: 2%;
+    margin-left: 1%;
 }
 
 .about-sec h2 small {
@@ -292,7 +338,7 @@ section {
 
 .about-sec p {
     font-size: 16px;
-    margin-top: 25%;
+    margin-top: 10%;
 }
 
 
@@ -312,3 +358,5 @@ section {
     color: #fff;
     font-size: 20px;
 }
+
+
