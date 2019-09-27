@@ -10,6 +10,15 @@ h1, h2, h3, h4, h5 {
     font-family: 'Montserrat', sans-serif;
 }
 
+.linkedin_logo {
+    margin-top: 10px;
+}
+
+.footer_class {
+
+    background-color: #2d3246;
+}
+
 .parallax-section {
     background-attachment: fixed !important;
 }
