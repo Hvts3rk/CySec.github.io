@@ -86,6 +86,11 @@ section {
     width: 100%;
 }
 
+.sps--abv {
+    /*background-color: transparent;*/
+    color: white;
+}
+
 .sps--blw {
     background-color: #fff;
     color: #fff;
