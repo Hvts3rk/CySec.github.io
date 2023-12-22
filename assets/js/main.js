@@ -332,22 +332,26 @@
 
 			});
 
-	// JavaScript to handle the show more/show less functionality
-	document.getElementById('showMoreLink').addEventListener('click', function (event) {
-		// Prevent the default behavior of the anchor link
-		event.preventDefault();
+		 // JavaScript to handle the show more/show less functionality for each section
+		 var buttons = document.querySelectorAll('.showMoreButton');
 
-		var hiddenContent = document.getElementById('hiddenContent');
-		var showMoreLink = document.getElementById('showMoreLink');
-
-		// Toggle the visibility of the hidden content
-		if (hiddenContent.style.display === 'none' || hiddenContent.style.display === '') {
-			hiddenContent.style.display = 'block';
-			showMoreLink.textContent = 'Show less';
-		} else {
-			hiddenContent.style.display = 'none';
-			showMoreLink.textContent = 'Show more';
-		}
-	});
+		 buttons.forEach(function(button) {
+			 button.addEventListener('click', function (event) {
+				 // Prevent the default behavior of the anchor link
+				 event.preventDefault();
+	 
+				 var targetId = button.getAttribute('data-target');
+				 var hiddenContent = document.getElementById(targetId);
+	 
+				 // Toggle the visibility of the hidden content
+				 if (hiddenContent.style.display === 'none' || hiddenContent.style.display === '') {
+					 hiddenContent.style.display = 'block';
+					 button.querySelector('a').textContent = 'Show less';
+				 } else {
+					 hiddenContent.style.display = 'none';
+					 button.querySelector('a').textContent = 'Show more';
+				 }
+			 });
+		 });
 
 })(jQuery);
